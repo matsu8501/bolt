@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.clearfix:after {
+.clearfix::after {
   display: block;
   content: "";
   clear: both;
@@ -38,7 +38,7 @@
   background-color: #74cfae;
   text-align: center;
   line-height: 12px;
-  color: white;
+  color: #fff;
   width: 60px;
 }
 
@@ -86,13 +86,13 @@
 
 .function__title {
   font-size: 24px;
-  color: white;
+  color: #fff;
   margin-bottom: 35px;
 }
 
 .function__text {
   font-size: 20px;
-  color: white;
+  color: #fff;
 }
 
 .work-inner {
@@ -151,7 +151,7 @@
   font-size: 12px;
   float: left;
   background-color: #74cfae;
-  color: white;
+  color: #fff;
 }
 
 .work__box__button:hover {
@@ -165,7 +165,7 @@
 }
 
 .skill__text {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -178,13 +178,17 @@
 
 .skill-item {
   margin-left: 180px;
-  color: white;
-  text-align: center;
-  font-size: 16px;
 }
 
 .skill-item:first-child {
   margin-left: 0;
+}
+
+.skill-item__text {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .nav-inner {
@@ -209,7 +213,7 @@
 }
 
 .nav-item:hover {
-  background-color: white;
+  background-color: #fff;
   transition: 0.3s;
 }
 
@@ -219,6 +223,6 @@
 }
 
 .footer__text {
-  color: white;
+  color: #fff;
   margin-left: 60%;
 }
