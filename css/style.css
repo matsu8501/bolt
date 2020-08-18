@@ -35,7 +35,6 @@ body {
 
 .header-inner {
   padding: 15px 0;
-  box-sizing: border-box;
 }
 
 .inner {
@@ -70,6 +69,10 @@ body {
   line-height: 12px;
 }
 
+.nav-drawer {
+  display: none;
+}
+
 .main {
   padding-top: 80px;
 }
@@ -102,12 +105,10 @@ body {
 
 .function-inner {
   padding-top: 50px;
-  padding-left: 100px;
   display: flex;
 }
 
 .function__figure {
-  box-sizing: border-box;
   width: auto;
 }
 
@@ -145,7 +146,6 @@ body {
 .work__figure-box {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   margin-top: 40px;
 }
 
@@ -168,10 +168,8 @@ body {
 }
 
 .work__box {
-  margin: 0 auto;
-  margin-top: 90px;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin: 90px auto 0 auto;
+  padding: 0 80px 0 80px;
   display: flex;
 }
 
@@ -216,8 +214,7 @@ body {
 .skill-box {
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .skill-item {
@@ -245,14 +242,10 @@ body {
 }
 
 .nav-box {
-  text-decoration: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav-item {
-  color:  #74cfae;
   width: 25%;
   padding: 50px 0;
   text-align: center;
@@ -262,6 +255,10 @@ body {
 
 .nav-item:hover {
   background-color: #fff;
+}
+
+.nav-icon {
+  color:  #74cfae;
 }
 
 .footer {
@@ -277,13 +274,7 @@ body {
   text-align: right;
 }
 
-@media screen and (min-width: 1100px){
-  .nav-drawer {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1099px) {
+@media screen and (max-width: 1099px) {
   .inner {
     width: 97%;
   }
@@ -294,7 +285,6 @@ body {
   
   .function-inner {
     padding-bottom: 25px;
-    padding-left: 0;
     display: block;
   }
   
@@ -330,9 +320,7 @@ body {
   }
 
   .work__figure-item:nth-child(3n+1) {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 80px auto 0 auto;
   }
 
   .work__figure-item:first-child {
@@ -342,14 +330,12 @@ body {
   .work__box {
     display: block;
     margin-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     text-align: center;
   }
   
   .work__box__button {
-    margin-top: 40px;
-    margin-left: 0;
+    margin: 40px 0 0 0;
   }
   
   .skill-inner {
@@ -358,12 +344,10 @@ body {
   
   .skill-box {
     display: block;
-    margin-top: 40px;
   }
 
   .skill-item {
-    margin-top: 88px;
-    margin-left: 0;
+    margin: 88px 0 0 0;
   }
   
   .skill-item:first-child {
@@ -372,8 +356,8 @@ body {
 }
 
 @media screen and (max-width:767px) {
-  .inner {
-    width: 97%;
+  .nav-drawer {
+    display: block;
   }
 
   .header__button,
@@ -382,7 +366,6 @@ body {
   }
   
   .nav-drawer {
-    display: inline-block;
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ddd;
@@ -410,103 +393,19 @@ body {
   }
 
   .title-inner {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding: 160px 0 130px 0;
   }
 
   .title__text {
     font-size: 80px;
   }
 
-  .function-inner {
-    padding-bottom: 25px;
-    padding-left: 0;
-    display: block;
-  }
-  
-  .function__figure {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .function__box {
-    margin: 0 auto;
-  }
-
-  .function__title {
-    margin-top: 20px;
-  }
-
-  .function__text {
-    margin-top: 35px;
-  }
-
-  .work__figure-box {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .work__figure-item {
-    margin: 0 auto;
-    max-width: 300px;
-  }
-  
-  .work__figure-item:nth-child(n+4) {
-    margin-top: 0;
-  }
-
-  .work__figure-item:nth-child(3n+1) {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .work__figure-item:first-child {
-    margin-top: 0;
-  }
-
-  .work__box {
-    display: block;
-    margin-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-  
-  .work__box__button {
-    margin-top: 40px;
-    margin-left: 0;
-  }
-
-  .skill-inner {
-    text-align: center;
-  }
-  
-  .skill-box {
-    display: block;
-    margin-top: 40px;
-  }
-
-  .skill-item {
-    margin-top: 88px;
-    margin-left: 0;
-  }
-  
-  .skill-item:first-child {
-    margin-top: 0;
-  }
-
   .nav-inner {
-    padding-top: 50px;
-    vertical-align: initial;
-    text-align: center;
+    padding: 50px 0 50px 0;
   }
   
   .nav-box {
     display: block;
-    align-items: initial;
-    justify-content:  initial;
-    text-align: center;
   }
   
   .nav-item {
